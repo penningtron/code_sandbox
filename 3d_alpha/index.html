@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three.js Transparent Background</title>
+    <title>Three.js with Image Background</title>
     <style>
         body {
             margin: 0;
             overflow: hidden;
+            background-image: url('bg.jpg'); /* Replace 'background_image.jpg' with your image path */
+            background-size: cover;
+            background-position: center;
         }
         canvas {
             display: block;
@@ -31,7 +34,7 @@
         scene.add(cube);
 
         // Position the camera
-        camera.position.z = 5;
+        camera.position.z = 2;
 
         // Render loop
         const animate = function () {
